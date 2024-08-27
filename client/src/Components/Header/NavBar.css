@@ -1,0 +1,84 @@
+/* Styles for the active state of nav links */
+.navbar-nav .nav-link.active {
+    position: relative;
+    color: #000; /* Optional: Change text color if needed */
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #ffbb00;
+    border-radius: 1px;
+}
+
+.navbar-brand {
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Dropdown items hover effect */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #ffbb00; /* Set the hover background color */
+    color: #000; /* Optional: Change the text color on hover */
+}
+
+/* Active dropdown toggle button */
+.navbar-nav .nav-item .dropdown-toggle::after {
+    display: none; /* Hide the default dropdown arrow */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center; /* Center-align the navbar items */
+    }
+
+    .navbar-nav {
+        margin-top: 10px; /* Add some spacing at the top of the nav items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Adjust the spacing between nav items */
+    }
+
+    .navbar-toggler {
+        margin: 0; /* Remove margin from the toggler */
+    }
+
+    .form-control, .btn {
+        width: 100%; /* Make the search input and button full-width */
+        margin: 5px 0; /* Add spacing around the search form */
+    }
+
+    .form-control {
+        padding: 10px; /* Adjust padding for better fit */
+    }
+
+    .btn {
+        padding: 10px; /* Adjust padding for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 18px; /* Adjust brand font size for smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px; /* Adjust font size for nav links on smaller screens */
+    }
+
+    .form-control, .btn {
+        padding: 8px; /* Further adjust padding for smaller screens */
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button font size */
+    }
+}

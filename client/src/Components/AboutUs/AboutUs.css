@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Maname&family=Noto+Serif+Sinhala:wght@100..900&display=swap');
+
+.text-left {
+    text-align: center;
+}
+
+.text-left h1 {
+    display: inline-block;
+}
+
+.text-left h1.yellow {
+    color: #ffbb00;
+}
+
+.about-pg {
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about-text {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-pg {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-pg {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
+
+    .text-left h1 {
+        font-size: 24px;
+    }
+}
