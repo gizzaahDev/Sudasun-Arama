@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maname&family=Noto+Serif+Sinhala:wght@100..900&display=swap');
 
+
+
 .maname-regular {
     font-family: "Maname", serif;
     font-weight: 400;
@@ -8,7 +10,7 @@
 
 .slideshow {
     width: 100%;
-    height: 650px; /* Set a fixed height for the slideshow */
+    height: 550px; /* Set a fixed height for the slideshow */
     margin: 0 auto;
     overflow: hidden; /* Hide the parts of the image that go beyond the container */
     position: relative;
@@ -22,6 +24,9 @@
     left: 0;
     transition: opacity 2s ease-in-out;
     opacity: 0;
+    display: flex; /* Center content within the slide */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
 .slide.active {
@@ -35,6 +40,18 @@
     display: block; /* Remove any extra space below the image */
 }
 
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404); /* White color with 50% opacity */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -46,4 +63,63 @@
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+
+/* vision-mission css */
+.VM-container {
+    margin-top: 20px;
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden; /* Ensure content does not overflow */
+    background-color: rgba(255, 255, 255, 0.295);
+    text-align: center;
+}
+
+.VM-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; /* Width of the blurred image */
+    height: 100%; /* Full height */
+    background-image: url('bg_vission.jpg');
+    background-position: left center; /* Position the image to the left */
+    background-size: cover; /* Cover the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
+    z-index: -1; /* Place behind the content */
+}
+
+
+.vision-container{
+    margin-top: 40px;
+
+}
+
+.vision-container h4{
+    color: rgb(71, 71, 71);
+    margin-bottom: 20px;
+}
+
+.vision-container p{
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.vision-p{
+    background-color: #ffbb002f;
+}
+
+.mission-container p{
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mission-pg{
+    margin-top: 20px;
 }

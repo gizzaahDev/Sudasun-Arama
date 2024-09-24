@@ -33,20 +33,58 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="slideshow">
-        {this.images.map((image, index) => (
-          <div key={index} className={`slide ${this.state.currentIndex === index ? 'active' : ''}`}>
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="slide-image"
-            />
-            <div className="text-overlay">
-              <h2 className='maname-regular'>ගොඩපිටිය ශ්‍රී සුදර්ශනාරාම පුරාණ මහා විහාරය</h2>
-              <p className='maname-regular'>අකුරැස්ස</p>
+      <div>
+        <div className="slideshow">
+          {this.images.map((image, index) => (
+            <div key={index} className={`slide ${this.state.currentIndex === index ? 'active' : ''}`}>
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="slide-image"
+              />
+              <div className="text-overlay">
+                <h2 className='maname-regular'>ගොඩපිටිය ශ්‍රී සුදර්ශනාරාම පුරාණ මහා විහාරය</h2>
+                <p className='maname-regular'>අකුරැස්ස
+
+
+
+                </p>
+              </div>
+
+            </div>
+          ))}
+        </div>
+        <div className='VM-container'>
+        <div className='vision-container'>
+          <div >
+            <h4>෴ දැක්ම ෴</h4>
+            <div className='vision-p'>
+            <p >
+              ශ්‍රී ලංකාව බහු සංස්කෘතික සහ බහු ආගම් ගමනාන්තයක් වශයෙන් ප්‍රකට එකක් වන අතර, එහි විවිධත්වය එරට සංස්කෘතික උරුමය, කලා, නාට්‍ය හා සංගීතයේදී හෝ, සිරිත් විරිත් වලදී හෝ ඉතා විශාල ලෙස දැක්වේ. 
+
+            </p>
             </div>
           </div>
-        ))}
+
+        </div>
+
+
+        <div className='mission-container'>
+          <div className="mission-pg">
+            <h4>෴ මෙහෙවර ෴</h4>
+            <div className='vision-p'>
+            <p >
+              ශ්‍රී ලංකාව බහු සංස්කෘතික සහ බහු ආගම් ගමනාන්තයක් වශයෙන් ප්‍රකට එකක් වන අතර, එහි විවිධත්වය එරට සංස්කෘතික උරුමය, කලා, නාට්‍ය හා සංගීතයේදී හෝ, සිරිත් විරිත් වලදී හෝ ඉතා විශාල ලෙස දැක්වේ. ශ්‍රී ලංකාවට විශිෂ්ට වූ ඉතිහාසයක් තිබේ. එය යුනෙස්කෝ සංරක්ෂණය කළ පැරණි නගරවල්, කෙලෑ, යාය සහ බොදු අයුතුයන්හිදී දක්නට ලැබේ. ඉන්දියානු සාගරයෙහි මුහුදු වෙරළ පිටිපස්සේ, හරිත වනාන්තර, තේ කඳුකර, සෙරසම් බිම් සහ මැටි ගල් වලින් සෑදූ විශාල ගල් පර්වතකයන්, දේශගුණවලට, සත්ව විශේෂවලට, හා ශාක සම්ප්‍රාප්තියට යටත්ව ශ්‍රී ලංකාව භූමිගතවී ඇත.
+
+              
+
+
+            </p>
+            </div>
+          </div>
+
+        </div>
+        </div>
       </div>
     );
   }

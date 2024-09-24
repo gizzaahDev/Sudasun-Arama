@@ -1,0 +1,380 @@
+/* Base Styles */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Maname&family=Noto+Serif+Sinhala:wght@100..900&display=swap');
+
+.app-poya {
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.react-calendar {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #fff;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+}
+
+.react-calendar__navigation button {
+    color: #ffbb00;
+    min-width: 44px;
+    background: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #f8f8fa;
+}
+
+.react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background: #f8f8fa;
+    color: #ffbb00;
+    border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+    background: #ffbb0042;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffbb00;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: #ffbb0062;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffbb00;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+    background: #f8f8fa;
+}
+
+.react-calendar__tile--active {
+    background: #ffbb00;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #ffbb00;
+    color: white;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #f8f8fa;
+}
+
+.react-calendar__tile--range {
+    background: #f8f8fa;
+    color: #ffbb00;
+    border-radius: 0;
+}
+
+.react-calendar__tile--rangeStart {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 6px;
+    margin-bottom: 12px;
+    background: #ffbb00;
+    color: white;
+}
+
+.react-calendar__tile--rangeEnd {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #000000;
+    color: #ffbb00;
+}
+
+.highlight {
+    background: #ffc1075e;
+    color: #795b03;
+    border-radius: 6px;
+}
+
+.highlight:enabled:hover {
+    background: #ffc1075e;
+    color: #795b03;
+}
+
+.highlight-monthlypoya {
+    background: linear-gradient(to right, #ffc1075e 50%, #9696969f 50%);
+    color: #795b03;
+    border-radius: 6px;
+    /* Adjust height and width as needed */
+}
+
+.highlight-monthlypoya:hover {
+    background: linear-gradient(to right, #ffc1075e 50%, transparent 50%);
+    color: #795b03;
+}
+
+.poya-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-right: 10px;
+}
+
+
+
+.poyaday-content {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-basis: 70%;
+    
+}
+
+.poyaday-content h5 {
+    color: #ffbb00;
+    font-weight: bold;
+}
+
+.upcomming-poya {
+    background-color: #ff00001e;
+    color: red;
+    border-radius: 5px;
+    border-left: 3px solid red;
+    padding: 5px;
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-sinhala-table-danaya{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-family: 'Noto Serif Sinhala', serif;
+    font-size: 14px;
+    background-color: #fff8e1;
+    border: 2px solid #ffbb00;
+}
+
+.custom-sinhala-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-family: 'Noto Serif Sinhala', serif;
+    font-size: 14px;
+    background-color: #fff8e1;
+    border: 2px solid #ffbb00;
+}
+
+.custom-sinhala-table thead {
+    background-color: #ffcc80;
+    color: #5d4037;
+}
+
+.custom-sinhala-table thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ffbb00;
+}
+
+.custom-sinhala-table tbody tr {
+    border-bottom: 1px solid #ffbb00;
+}
+
+.custom-sinhala-table tbody tr:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+.custom-sinhala-table tbody tr:hover {
+    background-color: #ffbb00;
+    color: #5d4037;
+}
+
+.custom-sinhala-table tbody th,
+.custom-sinhala-table tbody td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.custom-sinhala-table tbody th {
+    font-weight: bold;
+    color: #bf360c;
+}
+
+.custom-sinhala-table tbody td {
+    color: #6d4c41;
+}
+
+.custom-sinhala-table tbody tr:last-child {
+    border-bottom: 2px solid #ffbb00;
+}
+
+.custom-sinhala-table .final-row {
+    background-color: #ffbb00;
+}
+
+
+
+
+.calendar-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.button-t{
+    background-color: #ffbb00;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    text-align: center;
+    
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .text-left{
+        text-align: center;
+    }
+    .calendar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .react-calendar {
+        width: 80%;
+        padding: 10px;
+        order: 1; /* Calendar displayed first */
+    }
+
+    .poya-details {
+        width: 100%;
+        padding: 10px;
+        order: 2; /* Display between the calendar and table */
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 52dvh;
+        
+    }
+
+    .calendar-container{
+        margin-top: -0px;
+        
+    }
+
+    .poyaday-content{
+        margin-bottom: 150px;
+        padding-bottom: 80px;
+        text-align: center;
+        
+    }
+
+    .button-container{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .poya-timetable{
+        margin-top: 20vh;
+        
+    }
+    .custom-sinhala-table {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 12px;
+        order: 3;
+        
+    }
+
+    .time-table{
+        margin-top: 50px;
+    }
+
+    .custom-sinhala-table thead th,
+    .custom-sinhala-table tbody th,
+    .custom-sinhala-table tbody td {
+        padding: 10px;
+    }
+
+    .table-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .poya-details {
+        padding: 20px;
+        order: 2;
+        width: 100%;
+    }
+
+    .custom-sinhala-table {
+        width: 100%;
+        font-size: 10px;
+        order: 3;
+    }
+
+    .custom-sinhala-table thead th,
+    .custom-sinhala-table tbody th,
+    .custom-sinhala-table tbody td {
+        padding: 8px;
+    }
+
+    .react-calendar {
+        width: 100%;
+        padding: 8px;
+        order: 1;
+        
+    }
+
+    .table-container {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+}
+

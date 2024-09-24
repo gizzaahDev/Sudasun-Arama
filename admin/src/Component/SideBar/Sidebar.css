@@ -1,0 +1,67 @@
+.sidebar-container {
+  display: flex;
+  height: 100vh;
+  overflow: scroll initial;
+}
+
+.sidebar-header {
+  color: #ffbb00;
+}
+
+.sidebar-menu-item {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
+
+.sidebar-menu-item:hover {
+  background-color: #555; /* Change background color on hover */
+  color: #ffbb00; /* Change text color on hover */
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: #444; /* Background color for dropdown */
+   
+  display: block; /* Ensure it's displayed as a block element */
+  position: absolute;
+  top: 100%; /* Position below the trigger item */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it appears above other content */
+  transition: opacity 0.3s; /* Smooth transition for dropdown visibility */
+  opacity: 1; /* Ensure dropdown is visible */
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu-item {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for dropdown items */
+}
+
+.dropdown-menu-item:hover {
+  background-color: #666; /* Change background color on hover for dropdown items */
+  color: #ffbb00; /* Change text color on hover for dropdown items */
+  
+}
+
+.sidebar-footer {
+  text-align: center;
+  background-color: black;
+  color: #ffbb00;
+}
+
+.sidebar-footer-content {
+  padding: 20px 5px;
+}
+
+/* Styles for sidebar states */
+.expanded {
+  width: 250px; /* Adjust width for expanded state */
+}
+
+.collapsed {
+  width: 80px; /* Adjust width for collapsed state */
+  /* Add any additional styles needed for minimized sidebar */
+}

@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+
+/* App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.sidebar-container {
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 0px;
+  overflow-y: auto; /* If content is long, allow scrolling */
+  background-color: #f5f5f5; /* Optional: Give a different background color to the content area */
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

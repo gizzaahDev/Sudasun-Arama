@@ -45,10 +45,14 @@ export default class Footer extends Component {
                         </div>
                     </div>
                     <div className="footer-copyright">
-                        <p class="footer-text">
-                            Copyright © 2024 Sri Sudarshanarama Purana Maha Viharaya. All Rights Reserved. Powered By
-                            <span class="mid-container"> gizzaah🐺</span>
+                        <p class="footer-content">
+                            Copyright © 2024 Sri Sudarshanarama Purana Maha Viharaya. All Rights Reserved. Powered By<span> </span>
+                            
+                            <span class="mid-container"><a href="mailto:geeshanthisera1234@gmail.com" class="mid-container">WolfCOdes</a></span>
+
                         </p>
+
+                        
 
                     </div>
                 </footer>
